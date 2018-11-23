@@ -10,6 +10,35 @@ footer {
     margin-top: 50px;
 }
 
+.table {
+    width: 100%;
+    margin-bottom: 5px;
+  
+    th,
+    td {
+      padding: 5px;
+      vertical-align: top;
+      border-top: 2px solid #eee;
+    }
+  
+    thead th {
+      vertical-align: bottom;
+      border-bottom: (2 * 2px) solid #eee;
+    }
+  
+    tbody + tbody {
+      border-top: (2 * 2px) solid #eee;
+    }
+  
+    .table {
+      background-color: white;
+    }
+  }
+
+table {
+    @extend .table;
+}
+
 body {
     min-height: 100%;
 }

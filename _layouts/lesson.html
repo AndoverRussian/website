@@ -2,4 +2,67 @@
 layout: default
 ---
 
-{{content}}
+<h1>{{page.name}}</h1>
+<br>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview"
+      aria-selected="true">Обзор</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="vocab-tab" data-toggle="tab" href="#vocab" role="tab" aria-controls="vocab"
+      aria-selected="false">Новые слова</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="grammar-tab" data-toggle="tab" href="#grammar" role="tab" aria-controls="grammar"
+      aria-selected="false">Грамматика</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="dialog-tab" data-toggle="tab" href="#dialog" role="tab" aria-controls="dialog"
+      aria-selected="false">Диалог</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="story-tab" data-toggle="tab" href="#story" role="tab" aria-controls="story"
+      aria-selected="false">Чтение</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="drills-tab" data-toggle="tab" href="#drills" role="tab" aria-controls="drills"
+      aria-selected="false">Повторение</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="exercises-tab" data-toggle="tab" href="#exercises" role="tab" aria-controls="exercises"
+      aria-selected="false">Упражнение</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="evaluation-tab" data-toggle="tab" href="#evaluation" role="tab" aria-controls="evaluation"
+      aria-selected="false">Проверка</a>
+  </li>
+</ul>
+<br>
+
+<div class="tab-content">
+  <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+    {% contentblock overview %}
+  </div>
+  <div class="tab-pane fade show" id="vocab" role="tabpanel" aria-labelledby="vocab-tab">
+    {% contentblock vocab %}
+  </div>
+  <div class="tab-pane fade show" id="grammar" role="tabpanel" aria-labelledby="grammar-tab">
+    {% contentblock grammar %}
+  </div>
+  <div class="tab-pane fade show" id="dialog" role="tabpanel" aria-labelledby="dialog-tab">
+    {% contentblock dialog %}
+  </div>
+  <div class="tab-pane fade show" id="story" role="tabpanel" aria-labelledby="story-tab">
+    {% contentblock story %}
+  </div>
+  <div class="tab-pane fade show" id="drills" role="tabpanel" aria-labelledby="drills-tab">
+    {% contentblock drills %}
+  </div>
+  <div class="tab-pane fade show" id="exercises" role="tabpanel" aria-labelledby="exercises-tab">
+    {% contentblock exercises %}
+  </div>
+  <div class="tab-pane fade show" id="evaluation" role="tabpanel" aria-labelledby="evaluation-tab">
+    {% contentblock evaluation %}
+  </div>
+</div>
