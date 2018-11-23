@@ -1,0 +1,60 @@
+footer {
+  background-color: #eee;
+  min-height: 250px;
+  width: 100%;
+  margin-top: 50px; }
+
+.table, table {
+  width: 100%;
+  margin-bottom: 5px; }
+  .table th, table th,
+  .table td,
+  table td {
+    padding: 5px;
+    vertical-align: top;
+    border-top: 2px solid #eee; }
+  .table thead th, table thead th {
+    vertical-align: bottom;
+    border-bottom: 4px solid #eee; }
+  .table tbody + tbody, table tbody + tbody {
+    border-top: 4px solid #eee; }
+  .table .table, table .table, .table table, table table {
+    background-color: white; }
+
+body {
+  min-height: 100%; }
+
+.wordmark {
+  max-height: 150px; }
+
+nav {
+  margin-bottom: 40px;
+  background-color: #03254E !important; }
+
+.white {
+  color: white !important; }
+
+.emph {
+  text-transform: uppercase; }
+
+.sub {
+  color: lightgray;
+  font-weight: 300; }
+
+.lessons h1 {
+  text-align: center; }
+
+.page {
+  min-height: 70%;
+  min-height: -webkit-calc(100vh - 300px);
+  min-height: -moz-calc(100vh - 300px);
+  min-height: calc(100vh - 300px) !important;
+  display: block; }
+
+@media only screen and (max-width: 920px) {
+  .mobile-center {
+    margin: auto;
+    text-align: center; }
+
+  .col-sm {
+    padding-top: 25px; } }
