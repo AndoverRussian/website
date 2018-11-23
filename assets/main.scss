@@ -5,14 +5,12 @@ $primary: #03254E;
 
 footer {
     background-color: #eee;
-    height: 250px;
-    position: absolute !important;
+    min-height: 250px;
     width: 100%;
-    bottom: 0px;
+    margin-top: 50px;
 }
 
 body {
-    padding-bottom: 300px; 
     min-height: 100%;
 }
 
@@ -37,7 +35,26 @@ nav {
     color: lightgray;
     font-weight: 300;
 }
- 
+
 .lessons h1 {
     text-align: center;
+}
+
+.page {
+    min-height: 70%;
+    min-height: -webkit-calc(100vh - 300px);
+    min-height: -moz-calc(100vh - 300px);
+    min-height: calc(100vh - 300px) !important;
+    display: block;
+}
+
+@media only screen and (max-width: 920px) {
+    .mobile-center {
+        margin: auto;
+        text-align: center;
+    }
+
+    .col-sm {
+        padding-top: 25px;
+    }
 }
