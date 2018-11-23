@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="lessons">
+  <h1 class="display-4">Учебник</h1>
+  <hr>
+  <br>
+  <div class="card-columns">
+    {% for lesson in site.lessons %}
+    <div class="card border-primary">
+      <a href="{{lesson.url}}">
+        <div class="card-body text-center text-primary">
+          <h5 class="card-title">{{lesson.name}}</h5>
+          <p class="card-text">{{lesson.description}}</p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>

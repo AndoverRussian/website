@@ -1,0 +1,43 @@
+---
+---
+
+$primary: #03254E;
+
+footer {
+    background-color: #eee;
+    height: 250px;
+    position: absolute !important;
+    width: 100%;
+    bottom: 0px;
+}
+
+body {
+    padding-bottom: 300px; 
+    min-height: 100%;
+}
+
+.wordmark {
+    max-height: 150px;
+}
+
+nav {
+    margin-bottom: 40px;
+    background-color: $primary !important;
+}
+
+.white {
+    color: white !important;
+}
+
+.emph {
+    text-transform: uppercase;
+}
+
+.sub {
+    color: lightgray;
+    font-weight: 300;
+}
+ 
+.lessons h1 {
+    text-align: center;
+}
