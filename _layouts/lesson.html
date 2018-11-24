@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h1>{{page.name}}</h1>
-<br>
+<hr>
 <ul class="nav nav-pills" id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview"
@@ -39,8 +39,6 @@ layout: default
   </li>
 </ul>
 <hr>
-<br>
-
 <div class="tab-content">
   <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
     {% contentblock overview %}
