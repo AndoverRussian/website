@@ -58,3 +58,5 @@ nav {
 
   .col-sm {
     padding-top: 25px; } }
+img {
+  max-width: 300px; }

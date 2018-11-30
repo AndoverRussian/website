@@ -3,40 +3,55 @@ layout: default
 ---
 
 <h1>{{page.name}}</h1>
+<h3 class="text-muted">{{page.description}}</h3>
 <hr>
 <ul class="nav nav-pills" id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview"
       aria-selected="true">Обзор</a>
   </li>
+  {% ifhascontent vocab %}
   <li class="nav-item">
     <a class="nav-link" id="vocab-tab" data-toggle="tab" href="#vocab" role="tab" aria-controls="vocab"
       aria-selected="false">Новые слова</a>
   </li>
+  {% endifhascontent %}
+  {% ifhascontent grammar %}
   <li class="nav-item">
     <a class="nav-link" id="grammar-tab" data-toggle="tab" href="#grammar" role="tab" aria-controls="grammar"
       aria-selected="false">Грамматика</a>
   </li>
+  {% endifhascontent %}
+  {% ifhascontent dialog %}
   <li class="nav-item">
     <a class="nav-link" id="dialog-tab" data-toggle="tab" href="#dialog" role="tab" aria-controls="dialog"
       aria-selected="false">Диалог</a>
   </li>
+  {% endifhascontent %}
+  {% ifhascontent story %}
   <li class="nav-item">
     <a class="nav-link" id="story-tab" data-toggle="tab" href="#story" role="tab" aria-controls="story"
       aria-selected="false">Чтение</a>
   </li>
+  {% endifhascontent %}
+  {% ifhascontent drills %}
   <li class="nav-item">
     <a class="nav-link" id="drills-tab" data-toggle="tab" href="#drills" role="tab" aria-controls="drills"
       aria-selected="false">Повторение</a>
   </li>
+  {% endifhascontent %}
+  {% ifhascontent exercises %}
   <li class="nav-item">
     <a class="nav-link" id="exercises-tab" data-toggle="tab" href="#exercises" role="tab" aria-controls="exercises"
       aria-selected="false">Упражнение</a>
   </li>
+  {% endifhascontent %}
+  {% ifhascontent evaluation %}
   <li class="nav-item">
     <a class="nav-link" id="evaluation-tab" data-toggle="tab" href="#evaluation" role="tab" aria-controls="evaluation"
       aria-selected="false">Проверка</a>
   </li>
+  {% endifhascontent %}
 </ul>
 <hr>
 <div class="tab-content">

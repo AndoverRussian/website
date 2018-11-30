@@ -10,14 +10,18 @@ layout: default
     <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview"
       aria-selected="true">Обзор</a>
   </li>
+  {% ifhascontent information %}
   <li class="nav-item">
     <a class="nav-link" id="information-tab" data-toggle="tab" href="#information" role="tab" aria-controls="information"
       aria-selected="false">Информация</a>
   </li>
+  {% endifhascontent %}
+  {% ifhascontent schedule %}
   <li class="nav-item">
     <a class="nav-link" id="schedule-tab" data-toggle="tab" href="#schedule" role="tab" aria-controls="schedule"
       aria-selected="false">Расписание</a>
   </li>
+  {% endifhascontent %}
 </ul>
 <hr>
 
