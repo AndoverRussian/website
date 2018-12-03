@@ -1,0 +1,16 @@
+<div class="exercise">
+    {% if include.image %}
+    <img src="{{include.image}}" width="200px">
+    {% endif %}
+    <p>{{include.prompt}}</p>
+    <div class="input-group">
+        {% if include.prepend %}
+        <div class="input-group-prepend">
+            <div class="input-group-text">{{include.prepend}}</div>
+        </div>
+        {% endif %}
+        <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="{{include.answer}}" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)">
+        <button class='btn btn-default exercise-answer' onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+    </div>
+    <hr>
+</div>
