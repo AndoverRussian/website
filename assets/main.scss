@@ -13,27 +13,27 @@ footer {
 .table {
     width: 100%;
     margin-bottom: 5px;
-  
+
     th,
     td {
-      padding: 5px;
-      vertical-align: top;
-      border-top: 2px solid #eee;
+        padding: 5px;
+        vertical-align: top;
+        border-top: 2px solid #eee;
     }
-  
+
     thead th {
-      vertical-align: bottom;
-      border-bottom: (2 * 2px) solid #eee;
+        vertical-align: bottom;
+        border-bottom: (2 * 2px) solid #eee;
     }
-  
-    tbody + tbody {
-      border-top: (2 * 2px) solid #eee;
+
+    tbody+tbody {
+        border-top: (2 * 2px) solid #eee;
     }
-  
+
     .table {
-      background-color: white;
+        background-color: white;
     }
-  }
+}
 
 table {
     @extend .table;
@@ -88,6 +88,30 @@ nav {
     }
 }
 
+.container {
+    max-width: 920px !important;
+}
+
 img {
     max-width: 300px;
+}
+
+.exercise img {
+    margin: auto;
+}
+
+word {
+    cursor: pointer;
+    text-decoration: dashed;
+    text-decoration-color: lightgray;
+    text-decoration-line: underline;
+}
+
+.exercise-answer {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.exercise {
+    max-width: 500px;
 }
