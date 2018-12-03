@@ -1,3 +1,4 @@
 ---
 layout: courses
+title: Courses
 ---
