@@ -58,5 +58,24 @@ nav {
 
   .col-sm {
     padding-top: 25px; } }
+.container {
+  max-width: 920px !important; }
+
 img {
   max-width: 300px; }
+
+.exercise img {
+  margin: auto; }
+
+word {
+  cursor: pointer;
+  text-decoration: dashed;
+  text-decoration-color: lightgray;
+  text-decoration-line: underline; }
+
+.exercise-answer {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important; }
+
+.exercise {
+  max-width: 500px; }
