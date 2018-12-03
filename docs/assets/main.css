@@ -83,6 +83,16 @@ word {
 blockquote {
   background-color: #eee;
   padding: 6px; }
+  blockquote p ul:not(:first-child) {
+    margin-top: 1rem; }
+  blockquote p {
+    margin-bottom: 0rem !important; }
 
 body {
   font-size: 1.15rem !important; }
+
+.table, table {
+  margin-bottom: 1rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2rem !important; }
