@@ -83,3 +83,6 @@ word {
 blockquote {
   background-color: #eee;
   padding: 6px; }
+
+body {
+  font-size: 1.15rem !important; }
