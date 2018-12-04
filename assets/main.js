@@ -18,7 +18,7 @@ function checkExercise(element) {
     var button = input.next();
     var val = input.val();
     var answer = input.attr("answer");
-    if (val == answer) {
+    if (val.toLowerCase() == answer.toLowerCase()) {
         input.removeClass("is-invalid");
         input.addClass("is-valid");
         button.addClass("btn-success");
