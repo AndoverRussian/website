@@ -78,9 +78,6 @@ word {
   border-top-left-radius: 0px !important;
   border-bottom-left-radius: 0px !important; }
 
-.exercise {
-  max-width: 500px; }
-
 blockquote {
   background-color: #eee;
   padding: 6px;
@@ -95,3 +92,29 @@ body {
 
 .table, table {
   margin-bottom: 1rem; }
+
+@media print {
+  .lesson-description {
+    background-color: #eee !important;
+    border-radius: 6px;
+    padding: 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    -webkit-print-color-adjust: exact !important; }
+
+  .lesson-item {
+    display: block !important;
+    opacity: 100%; }
+
+  .lesson-section-title {
+    display: block !important;
+    margin-top: 2rem;
+    page-break-before: always; } }
+.lesson-section-title {
+  display: none; }
+
+.drill-answer {
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+  text-align: right; }

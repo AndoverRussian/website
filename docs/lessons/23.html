@@ -38,18 +38,20 @@
     </div>
 </nav><main class="page-content" aria-label="Content">
       <div class="wrapper container">
-        <h1>Урок № 23</h1>
-<h3 class="text-muted">Национальность, язык и мир.</h3>
-<hr>
-<ul class="nav nav-pills" id="myTab" role="tablist">
+        <div class="lesson-description">
+  <h1>Урок № 23</h1>
+  <h3 class="text-muted">Национальность, язык и мир.</h3>
+</div>
+<hr class="d-print-none">
+<ul class="nav nav-pills d-print-none" id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview"
       aria-selected="true">Обзор</a>
   </li>
   
   <li class="nav-item">
-    <a class="nav-link" id="vocab-tab" data-toggle="tab" href="#vocab" role="tab" aria-controls="vocab"
-      aria-selected="false">Новые слова</a>
+    <a class="nav-link" id="vocab-tab" data-toggle="tab" href="#vocab" role="tab" aria-controls="vocab" aria-selected="false">Новые
+      слова</a>
   </li>
   
   
@@ -66,8 +68,7 @@
   
   
   <li class="nav-item">
-    <a class="nav-link" id="story-tab" data-toggle="tab" href="#story" role="tab" aria-controls="story"
-      aria-selected="false">Чтение</a>
+    <a class="nav-link" id="story-tab" data-toggle="tab" href="#story" role="tab" aria-controls="story" aria-selected="false">Чтение</a>
   </li>
   
   
@@ -83,21 +84,23 @@
   </li>
   
 </ul>
-<hr>
+<hr class="d-print-none">
 <div class="tab-content">
-  <div class="tab-pane fade show active text-center" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+  <div class="tab-pane fade show active text-center lesson-item" id="overview" role="tabpanel" aria-labelledby="overview-tab">
     
-<blockquote>
-  <p>Кто вы <strong>по национальности?</strong> Какие <strong>языки</strong> вы знаете или хотите знать?</p>
+<p>Кто вы <strong>по национальности?</strong> Какие <strong>языки</strong> вы знаете или хотите знать?</p>
 
-  <p>Я Американка. Я говорю по-русски и по-английски. Я хочу знать японский язык.</p>
-</blockquote>
+<p>Я американка. Я говорю по-русски и по-английски. Я хочу знать японский язык.</p>
 
 <p><img src="/assets/images/23/un.jpg" alt="" /></p>
 
 
   </div>
-  <div class="tab-pane fade show" id="vocab" role="tabpanel" aria-labelledby="vocab-tab">
+  <div class="tab-pane fade show lesson-item" id="vocab" role="tabpanel" aria-labelledby="vocab-tab">
+    <div class="lesson-section-title">
+      <h1>Новые слова</h1>
+      <hr>
+    </div>
     
 <h2 id="разнообразный">Разнообразный</h2>
 
@@ -222,7 +225,11 @@
 
 
   </div>
-  <div class="tab-pane fade show" id="grammar" role="tabpanel" aria-labelledby="grammar-tab">
+  <div class="tab-pane fade show lesson-item" id="grammar" role="tabpanel" aria-labelledby="grammar-tab">
+    <div class="lesson-section-title">
+      <h1>Грамматика</h1>
+      <hr>
+    </div>
     
 <h2 id="национальность">Национальность</h2>
 
@@ -321,7 +328,11 @@
 
 
   </div>
-  <div class="tab-pane fade show" id="dialog" role="tabpanel" aria-labelledby="dialog-tab">
+  <div class="tab-pane fade show lesson-item" id="dialog" role="tabpanel" aria-labelledby="dialog-tab">
+    <div class="lesson-section-title">
+      <h1>Диалог</h1>
+      <hr>
+    </div>
     
 <h3 id="в-аэропорте">В Аэропорте</h3>
 
@@ -349,7 +360,11 @@
 
 
   </div>
-  <div class="tab-pane fade show" id="story" role="tabpanel" aria-labelledby="story-tab">
+  <div class="tab-pane fade show lesson-item" id="story" role="tabpanel" aria-labelledby="story-tab">
+    <div class="lesson-section-title">
+      <h1>Чтение</h1>
+      <hr>
+    </div>
     
 <h2 id="директор-организации-объединенных-наций">Директор Организации Объединенных Наций</h2>
 
@@ -385,7 +400,11 @@
 
 
   </div>
-  <div class="tab-pane fade show" id="drills" role="tabpanel" aria-labelledby="drills-tab">
+  <div class="tab-pane fade show lesson-item" id="drills" role="tabpanel" aria-labelledby="drills-tab">
+    <div class="lesson-section-title">
+      <h1>Повторение</h1>
+      <hr>
+    </div>
     
 <h2 id="существительные">Существительные</h2>
 
@@ -401,8 +420,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="француз" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">француз</div>
     <hr />
 </div>
 <div class="exercise">
@@ -415,8 +435,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="украинка" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">украинка</div>
     <hr />
 </div>
 <div class="exercise">
@@ -429,8 +450,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="англичанин" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">англичанин</div>
     <hr />
 </div>
 <div class="exercise">
@@ -443,8 +465,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="русский" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">русский</div>
     <hr />
 </div>
 <div class="exercise">
@@ -457,8 +480,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="немцы" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">немцы</div>
     <hr />
 </div>
 <div class="exercise">
@@ -471,8 +495,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="итальянец" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">итальянец</div>
     <hr />
 </div>
 <div class="exercise">
@@ -485,8 +510,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="китаянка" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">китаянка</div>
     <hr />
 </div>
 <div class="exercise">
@@ -499,8 +525,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="японцы" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">японцы</div>
     <hr />
 </div>
 
@@ -516,8 +543,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="ему" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">ему</div>
     <hr />
 </div>
 <div class="exercise">
@@ -530,8 +558,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="кажется" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">кажется</div>
     <hr />
 </div>
 <div class="exercise">
@@ -544,8 +573,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="вам" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">вам</div>
     <hr />
 </div>
 <div class="exercise">
@@ -558,8 +588,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="им" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">им</div>
     <hr />
 </div>
 <div class="exercise">
@@ -572,8 +603,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="казалось" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">казалось</div>
     <hr />
 </div>
 <div class="exercise">
@@ -586,8 +618,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="ей" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">ей</div>
     <hr />
 </div>
 
@@ -603,8 +636,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="моего" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">моего</div>
     <hr />
 </div>
 <div class="exercise">
@@ -617,8 +651,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="их" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">их</div>
     <hr />
 </div>
 <div class="exercise">
@@ -631,8 +666,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="твоей" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">твоей</div>
     <hr />
 </div>
 <div class="exercise">
@@ -645,8 +681,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="вашего" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">вашего</div>
     <hr />
 </div>
 <div class="exercise">
@@ -659,8 +696,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="её" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">её</div>
     <hr />
 </div>
 <div class="exercise">
@@ -673,8 +711,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="его" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">его</div>
     <hr />
 </div>
 <div class="exercise">
@@ -687,8 +726,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="нашего" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">нашего</div>
     <hr />
 </div>
 
@@ -704,8 +744,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="в парк" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">в парк</div>
     <hr />
 </div>
 <div class="exercise">
@@ -718,8 +759,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="к Виктору" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">к Виктору</div>
     <hr />
 </div>
 <div class="exercise">
@@ -732,8 +774,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="ко мне" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">ко мне</div>
     <hr />
 </div>
 <div class="exercise">
@@ -746,8 +789,9 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="домой" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">домой</div>
     <hr />
 </div>
 <div class="exercise">
@@ -760,14 +804,19 @@
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="к Елене" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
-        <button class="btn btn-default exercise-answer" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class="btn btn-default exercise-answer d-print-none" onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">к Елене</div>
     <hr />
 </div>
 
 
   </div>
-  <div class="tab-pane fade show" id="exercises" role="tabpanel" aria-labelledby="exercises-tab">
+  <div class="tab-pane fade show lesson-item" id="exercises" role="tabpanel" aria-labelledby="exercises-tab">
+    <div class="lesson-section-title">
+      <h1>Упражнение</h1>
+      <hr>
+    </div>
     
 <ul>
   <li><a href="/assets/homework/23/23_rfe_quest.pdf">Вопросы</a></li>

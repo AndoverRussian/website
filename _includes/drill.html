@@ -10,7 +10,8 @@
         </div>
         {% endif %}
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="{{include.answer}}" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)">
-        <button class='btn btn-default exercise-answer' onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
+        <button class='btn btn-default exercise-answer d-print-none' onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
+    <div class="drill-answer d-none d-print-block">{{include.answer}}</div>
     <hr>
 </div>
