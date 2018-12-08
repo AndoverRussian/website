@@ -93,7 +93,8 @@ nav {
 }
 
 img {
-    max-width: 300px;
+    max-width: 500px;
+    border-radius: 6px;
 }
 
 .exercise img {
@@ -127,6 +128,8 @@ blockquote {
     p {
         margin-bottom: 0rem !important;
     }
+
+    border-radius: 6px;
 }
 
 body {
