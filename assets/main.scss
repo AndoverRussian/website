@@ -47,6 +47,11 @@ body {
     max-height: 150px;
 }
 
+img a {
+    background-color: #cccccc88;
+    border: 2px solid red;
+}
+
 nav {
     margin-bottom: 40px;
     background-color: $primary !important;
