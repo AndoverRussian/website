@@ -1,6 +1,6 @@
 <div class="exercise">
     {% if include.image %}
-    <img src="{{include.image}}" width="200px">
+        <img src="{{include.image}}" width="200px">
     {% endif %}
     <p>{{include.prompt}}</p>
     <div class="input-group">
@@ -13,7 +13,7 @@
         <button class='btn btn-default exercise-answer d-print-none' onclick="exerciseGiveAnswer(this)" type="button">Ответ</button>
     </div>
     <div class="drill-answer d-none d-print-block">{{include.answer}}</div>
-    {% if include.prepend %}
+    {% if include.prompt %}
         <hr>
     {% endif %}
 </div>
