@@ -107,11 +107,13 @@
     
 <h2 id="тело">Тело</h2>
 
-<div class="interactive" id="interactive-human">
-    <img src="/assets/images/22/vitruvian_man.jpg" class="interactive-img" />
+<div class="row">
+  <div class="col-md-6">
+      <div class="interactive" id="interactive-face">
+    <img src="/assets/images/22/face.jpg" class="interactive-img" />
     <script>
-        var interactive = $("#interactive-human");
-        var items = eval("[['голова', 270, 400], ['нос', 240,370], ['шея', 270,355]]");
+        var interactive = $("#interactive-face");
+        var items = eval("[['нос', 220, 250], ['<word>глаз</word> (мн. <i>глала</i>) ', 250, 330], ['<word>рот</word>', 220, 180], ['<word>ухо</word> (мн. <i>уши</i>)', 00, 330], ['<word>щека</word>', 110, 250], ['<word>горло</word>', 220, 25], ['<word>шея</word>', 350, 70]]");
         var i;
         for (i = 0; i < items.length; i++) {
             var item = items[i];
@@ -120,8 +122,27 @@
         }
     </script>
 </div>
+  </div>
+  <div class="col-md-6">
+    <div class="interactive" id="interactive-human">
+    <img src="/assets/images/22/vitruvian_man.jpg" class="interactive-img" />
+    <script>
+        var interactive = $("#interactive-human");
+        var items = eval("[['<word>голова</word>', 270, 400], ['<word>плечо</word>', 290, 355], ['<word>рука</word> (мн. <i>руки</i>)', 370, 345], ['<word>палец</word> (мн. <i>пальцы</i>)', 50, 330], ['<word>рука</word> (мн. <i>руки</i>)', 410, 327], ['<word>грудь</word>', 230, 320], ['<word>живот</word>', 250, 270], ['<word>нога</word> (мн. <i>ноги</i>)', 280, 80], ['<word>нога</word> (мн. <i>ноги</i>)', 355, 45]]");
+        var i;
+        for (i = 0; i < items.length; i++) {
+            var item = items[i];
+            var style = "left: " + item[1] + "px; bottom: " + item[2] + "px;"
+            interactive.append("<div class='interactive-tooltip' style='" + style + "'><div class='interactive-tooltip-dot'></div><div class='interactive-tooltip-text'>" + item[0] + "</div></div>");
+        }
+    </script>
+</div>
+  </div>
+</div>
+<p><br />
+<small>Фото: via Wikimedia Commons.</small></p>
 
-<p>[body not completed]</p>
+<hr />
 
 <ul>
   <li><strong><word>откуда</word></strong> — там, где оригинальное место</li>

@@ -141,6 +141,8 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute; }
   .interactive-tooltip .interactive-tooltip-text {
     display: none;
+    overflow: visible;
+    white-space: nowrap;
     transition: opacity 1s ease-in; }
   .interactive-tooltip .interactive-tooltip-dot {
     display: block; }
