@@ -89,7 +89,7 @@
 <div class="tab-content">
   <div class="tab-pane fade show active text-center lesson-item" id="overview" role="tabpanel" aria-labelledby="overview-tab">
     
-<p><strong>Откуда</strong> вы идёте? Что с вами? Как вы <strong>чувствуете</strong>?</p>
+<p><strong>Откуда</strong> вы идёте? Что с вами? Как вы себя <strong>чувствуете</strong>?</p>
 
 <p>Я иду <strong>из больницы</strong>. У меня <strong>грипп</strong> — я <strong>чувствую</strong> себя плохо.</p>
 
@@ -107,32 +107,26 @@
     
 <h2 id="тело">Тело</h2>
 
-<p><img src="/assets/images/22/vitruvian_man.jpg" usemap="#human" class="map" /></p>
-
-<map name="human">
-    <area alt="head" title="head" coords="255,128,6" shape="circle" />
-    <area alt="nose" title="nose" coords="287,134,60" shape="circle" />
-    <area alt="neck" title="neck" coords="309,159,6" shape="circle" />
-    <area alt="throat" title="throat" coords="288,167,6" shape="circle" />
-    <area alt="ear" title="ear" coords="313,133,6" shape="circle" />
-    <area alt="shoulder" title="shoulder" coords="239,185,6" shape="circle" />
-    <area alt="chest" title="chest" coords="319,205,6" shape="circle" />
-    <area alt="arm" title="arm" coords="421,215,6" shape="circle" />
-    <area alt="hand" title="hand" coords="94,189,6" shape="circle" />
-    <area alt="fingers" title="fingers" coords="489,121,6" shape="circle" />
-    <area alt="stomach" title="stomach" coords="291,276,6" shape="circle" />
-    <area alt="leg" title="leg" coords="358,441,6" shape="circle" />
-    <area alt="feet" title="feet" coords="311,542,6" shape="circle" />
-</map>
+<div class="interactive" id="interactive-human">
+    <img src="/assets/images/22/vitruvian_man.jpg" class="interactive-img" />
+    <script>
+        var interactive = $("#interactive-human");
+        var items = eval("[['голова', 270, 400], ['нос', 240,370], ['шея', 270,355]]");
+        var i;
+        for (i = 0; i < items.length; i++) {
+            var item = items[i];
+            var style = "left: " + item[1] + "px; bottom: " + item[2] + "px;"
+            interactive.append("<div class='interactive-tooltip' style='" + style + "'><div class='interactive-tooltip-dot'></div><div class='interactive-tooltip-text'>" + item[0] + "</div></div>");
+        }
+    </script>
+</div>
 
 <p>[body not completed]</p>
 
-<h2 id="разнообразный"><word>Разнообразный</word></h2>
-
 <ul>
   <li><strong><word>откуда</word></strong> — там, где оригинальное место</li>
-  <li><strong><word>из</word></strong> — ≠ в</li>
-  <li><strong><word>с</word></strong> — ≠ на</li>
+  <li><strong><word>из</word></strong> — ≠ в (+ РП)</li>
+  <li><strong><word>с</word></strong> — ≠ на (+ РП)</li>
   <li><strong><word>можно</word></strong> — когда кто-то говорит “да, вы можете это делать” (делать — не проблема)</li>
   <li><strong><word>нельзя</word></strong> — когда кто-то говорит “нет” (делать — проблема)</li>
   <li><strong><word>невозможно</word></strong> — когда что-то физически не может быть</li>
@@ -170,7 +164,7 @@
 
 <p><strong>Откуда</strong> антоним вопрос “куда.” Мы спрашиваем “откуда вы идёте?”, когда мы хотим знать, <em>где</em> кто-то был.</p>
 
-<p>Когда мы говорим “куда”, мы <word>употребляем</word> <eng>(use)</eng> предлоги В, НА, К (и др.) плюс какойто падеж (часто винительный падеж). Когда мы говорим “откуда” мы также употребляем предлоги ИЗ, С, ОТ — но они <em>всегда</em> плюс родителный падеж (кого/чего).</p>
+<p>Когда мы говорим “куда”, мы <word>употребляем</word> <eng>(use)</eng> предлоги В, НА, К (и др.) плюс какой то падеж (часто винительный падеж). Когда мы говорим “откуда” мы также употребляем предлоги ИЗ, С, ОТ — но они <em>всегда</em> плюс родителный падеж (кого/чего).</p>
 
 <p>Вы должны думать о вопросах “куда” и “откуда” как <word>пара</word>. Их предлоги тоже пары: в/из, на/с, к/от.</p>
 
@@ -178,19 +172,19 @@
 
 <h2 id="можнонельзяневозможно">Можно/нельзя/невозможно</h2>
 
-<p>Все эти слова <word>требуют</word> <eng>(require)</eng> <em>дательные конструкций</em> и плюс <em>инфинитивы</em>.</p>
+<p>Все эти слова <word>требуют</word> <eng>(require)</eng> <em>дательные конструкции</em> и плюс <em>инфинитивы</em>.</p>
 
 <p><strong>Можно</strong> мы говорим, когда кто-то должен сказать “да, сделайте это.”</p>
 
 <blockquote>
-  <p>Мне <strong>можно</strong> пойти в кино. (Я попросила маму, и они сказала “да.”)</p>
+  <p>Мне <strong>можно</strong> пойти в кино. (Я попросила маму, и она сказала “да.”)</p>
 
   <p>Ему <strong>можно</strong> играть сейчас. (Он уже делал свою работу.)</p>
 
   <p>Им <strong>можно</strong> говорить громко в комнате. (В комнате никто не работает.)</p>
 </blockquote>
 
-<p><strong>Нельзя</strong> антоним “можно.” Мы говорим “нельзя,” когда кто-то говорит, что это плохая идея, я мы не должны делать то, что мы хотим.</p>
+<p><strong>Нельзя</strong> антоним “можно.” Мы говорим “нельзя,” когда кто-то говорит, что это плохая идея и мы не должны делать то, что мы хотим.</p>
 
 <blockquote>
   <p>Мне <strong>нельзя</strong> пойти в кино. (Мама сказала “нет,” потому что завтра школа.)</p>
@@ -200,7 +194,7 @@
   <p>Ему <strong>нельзя</strong> говорить громко в комнате. (Другие читают в комнате.)</p>
 </blockquote>
 
-<p><strong>Невозможно</strong> значить, что это физически не может быть.</p>
+<p><strong>Невозможно</strong> значит, что это физически не может быть.</p>
 
 <blockquote>
   <p>Мне <strong>невозможно</strong> открыть окно. (Окно не работает.)</p>
@@ -224,7 +218,7 @@
   <p>Что с вами? (Это генеральный вопрос, но мы думаем, что есть проблема.)</p>
 </blockquote>
 
-<p>Глагол “чувствовать” говорить, что наши пальцы делают. Но когда мы говорим о своём здорове, мы говорим “чувствовать <em>себя</em>.”</p>
+<p>Глагол “чувствовать” говорит, что наши пальцы делают. Но когда мы говорим о своём здорове, мы говорим “чувствовать <em>себя</em>.”</p>
 
 <blockquote>
   <p>Как он <strong>себя чувствует</strong>? Он <strong>чувствует себя</strong> плохо.</p>
@@ -240,7 +234,7 @@
 
 <h2 id="приветы">Приветы</h2>
 
-<p>Когда мы <strong>первы раз</strong> видим человека:</p>
+<p>Когда мы <strong>первый раз</strong> видим человека:</p>
 
 <blockquote>
   <p>Здравствый/здравствуйте (всегда можно)</p>
@@ -285,11 +279,11 @@
 
   <p><strong>Игорь</strong>: У вас лекарство? Почему вы на улице? Откуда вы?</p>
 
-  <p><strong>Елена</strong>: Я иду домой из поликлиники. Они дали мне лекарство. Но дом так далеко — может быть мне невозможно туда идти пешком.</p>
+  <p><strong>Елена</strong>: Я иду домой из поликлиники. Дали мне лекарство. Но дом так далеко — может быть мне невозможно туда идти пешком.</p>
 
   <p><strong>Игорь</strong>: Если хотите, у меня машина. Вы хотите эту помощь?</p>
 
-  <p><strong>Елена</strong>: Да, но мама говорить, что мне нельзя быть в машине.</p>
+  <p><strong>Елена</strong>: Да, но мама говорит, что мне нельзя быть в машине — очень опасно зимой.</p>
 
   <p><strong>Игорь</strong>: Понимаю. До свидания!</p>
 
@@ -306,7 +300,7 @@
     
 <h2 id="большая-проблема-грипп">Большая Проблема: Грипп</h2>
 
-<p>Ирина — доктор. Ей сорок шесть лет, и она живёт в Петрозаводске. Она работает в поликлинике и любит свою работу: она хочет помочь другим людям. Но когда она чувствует себя плохо, ей можно не работать — и сегодня, она чувствует себя плохо.</p>
+<p>Ирина — врач. Ей сорок шесть лет, и она живёт в Петрозаводске. Она работает в поликлинике и любит свою работу: она хочет помочь другим людям. Но когда она чувствует себя плохо, ей можно не работать — и сегодня, она чувствует себя плохо.</p>
 
 <p>У неё болит голова, и поэтому она дома. У неё высокая температура (38 градусов). Она принимает лекарство, но её голова ещё болит. Но она доктор; она много знает о болезнях и теле.</p>
 
@@ -327,8 +321,8 @@
   <li>Какая у неё температура? Это нормально?</li>
   <li>Что она сделала, чтобы чувствовать себя лучше?</li>
   <li>О чём она много знает?</li>
-  <li>Что его муж думает?</li>
-  <li>Что Игина думает о том, что её муж думает? Почему?</li>
+  <li>Что её муж думает?</li>
+  <li>Что Ирина думает о том, что её муж думает? Почему?</li>
   <li>Какая у неё болезнь? (Что она думает?)</li>
   <li>Почему она идёт в поликлинику?</li>
 </ol>
@@ -588,7 +582,7 @@
     <div class="input-group">
         
         <div class="input-group-prepend">
-            <div class="input-group-text">Они, шея →</div>
+            <div class="input-group-text">Они, ше<strong>и</strong> →</div>
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="У них болят шеи" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />
@@ -663,7 +657,7 @@
     <div class="input-group">
         
         <div class="input-group-prepend">
-            <div class="input-group-text">Мы, нос →</div>
+            <div class="input-group-text">Мы, нос<strong>ы</strong> →</div>
         </div>
         
         <input type="text" autocorrect="off" autocapitalize="none" class="form-control exercise-input" answer="У нас болят носы" onkeyup="checkExercise(this)" onfocusout="checkExercise(this)" />

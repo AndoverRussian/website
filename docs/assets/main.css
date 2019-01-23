@@ -130,3 +130,34 @@ eng {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem !important; }
+
+.interactive {
+  position: relative; }
+
+.interactive-img {
+  display: block; }
+
+.interactive-tooltip {
+  position: absolute; }
+  .interactive-tooltip .interactive-tooltip-text {
+    display: none;
+    transition: opacity 1s ease-in; }
+  .interactive-tooltip .interactive-tooltip-dot {
+    display: block; }
+
+.interactive-tooltip-dot {
+  height: 12px;
+  width: 12px;
+  background-color: #33333388;
+  border-radius: 50%; }
+
+.interactive-tooltip-text {
+  background-color: #333333;
+  border-radius: 6px;
+  padding: 8px;
+  color: white; }
+
+.interactive-tooltip:hover .interactive-tooltip-text {
+  display: inline; }
+.interactive-tooltip:hover .interactive-tooltip-dot {
+  display: none; }

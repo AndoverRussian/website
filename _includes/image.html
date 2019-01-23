@@ -1,0 +1,13 @@
+<div class="interactive" id="interactive-{{include.id}}">
+    <img src="{{include.src}}" class="interactive-img">
+    <script>
+        var interactive = $("#interactive-{{include.id}}");
+        var items = eval("{{include.tooltips}}");
+        var i;
+        for (i = 0; i < items.length; i++) {
+            var item = items[i];
+            var style = "left: " + item[1] + "px; bottom: " + item[2] + "px;"
+            interactive.append("<div class='interactive-tooltip' style='" + style + "'><div class='interactive-tooltip-dot'></div><div class='interactive-tooltip-text'>" + item[0] + "</div></div>");
+        }
+    </script>
+</div>
