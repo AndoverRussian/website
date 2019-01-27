@@ -62,6 +62,9 @@ nav {
 
   .col-sm {
     padding-top: 25px; } }
+@media not speech and (min-width: 920px) {
+  .desktop-expanded {
+    padding-top: 50px; } }
 .container {
   max-width: 920px !important; }
 
