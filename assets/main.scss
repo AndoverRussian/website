@@ -91,6 +91,15 @@ nav {
     .col-sm {
         padding-top: 25px;
     }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    .img-cutout {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
 }
 
 @media not speech and (min-width: 920px) {
@@ -106,6 +115,11 @@ nav {
 img {
     max-width: 500px;
     border-radius: 6px;
+}
+
+.img-cutout {
+    float: right;
+    padding: 16px;
 }
 
 .exercise img {
