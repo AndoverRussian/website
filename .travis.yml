@@ -1,6 +1,8 @@
 language: ruby
 setup:
   - bundle install
+script:
+  - jekyll build
 deploy:
   provider: pages
   skip_cleanup: true
