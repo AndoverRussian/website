@@ -250,3 +250,13 @@ h1, h2, h3, h4, h5, h6 {
         display: none;
     }
 }
+
+@media only screen and (max-width: 991.98px) { 
+    .small-only {
+        display: inherit !important;
+    }
+}
+
+.small-only {
+    display: none;
+}
